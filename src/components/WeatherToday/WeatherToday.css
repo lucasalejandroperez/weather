@@ -1,0 +1,14 @@
+.today_weather_title_box {
+    background-color: #0d4757;
+    color: white;
+}
+
+.today_weather_content_box {
+    background-color: #2bb5d9;
+    color: white;
+}
+
+.today_weather_temp {
+    font-weight: 500;
+    font-size: 4em;
+}

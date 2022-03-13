@@ -1,0 +1,9 @@
+.weatherOneDay_box {
+    border-right: 1px solid gray;
+}
+
+.weatherOneDay_temp {
+    font-weight: 400;
+    font-size: 2em;
+    color: blue;
+}

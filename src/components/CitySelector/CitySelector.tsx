@@ -36,7 +36,7 @@ export const CitySelector = () => {
 
             const apiKey = process.env.REACT_APP_WEATHER_APP_KEY;
             
-            await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${ city.lat }&lon=${ city.long }&exclude=alerts&appid=${ apiKey }&lang=es&units=metric`)
+            await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${ city.lat }&lon=${ city.long }&exclude=alerts&appid=${ apiKey }&units=metric`)
                         .then( res => {
                             
                             const weather: currentWeather = {
@@ -48,7 +48,7 @@ export const CitySelector = () => {
 
                             dispatch(setCurrentWeather( weather ));
 
-                            const forecastRaw = res.data.daily.slice(1,5);
+                            const forecastRaw = res.data.daily.slice(1,6);
                             
                             const forecastFiveDays = forecastRaw.map( (forecast: currentWeatherRaw) => ({
                                 temp: forecast.temp.day,

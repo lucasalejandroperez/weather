@@ -11,20 +11,34 @@ export const Weather = () => {
   const { loading } = useSelector( (state: State) => state.ui );
 
   return (
-      <>
-        <CitySelector />
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <CitySelector />
+          </div>
+        </div>
 
         {
           loading ?
-          <Loader />
-          :
-          <div>
-            <WeatherToday />
-
-            <WeatherFiveDays />
+          <div className="row mt-4">
+            <div className="col">
+              <Loader />
+            </div>
           </div>
+          :
+          <>
+            <div className="row mt-3">
+              <div className="col">
+                <WeatherToday />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <WeatherFiveDays />
+              </div>
+            </div>
+          </>
         }
-        
-      </>
+      </div>
   )
 }
