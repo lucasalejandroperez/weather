@@ -1,0 +1,31 @@
+[{
+    "id": 1,
+    "name": "Bangkok",
+    "long": 100.494,
+    "lat": 13.7522
+},
+{
+    "id": 2,
+    "name": "Kuala Lumpur",
+    "long": 101.687,
+    "lat": 3.13829
+},
+{
+    "id": 3,
+    "name": "London",
+    "long": -0.1275,
+    "lat": 51.5072
+},
+{
+    "id": 4,
+    "name": "Singapore",
+    "long": 103.85,
+    "lat": 1.28333
+},
+{
+    "id": 5,
+    "name": "Miami",
+    "long": -80.2105,
+    "lat": 25.7751
+}
+]
