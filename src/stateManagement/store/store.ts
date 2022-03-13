@@ -10,13 +10,10 @@ const rootReducer = combineReducers({
     ui: uiReducer
 });
 
-
-
 export const store = createStore(
     rootReducer,
     {},
     applyMiddleware(thunk)
 )
-
 
 export type State = ReturnType<typeof rootReducer>

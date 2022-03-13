@@ -1,14 +1,14 @@
-import { CityAction, cityState } from "../action-types/cityActionTypes";
+import { CityAction, ICityState } from "../action-types/cityActionTypes";
 
-export interface citiesState {
-    cities: cityState[]
+export interface ICitiesState {
+    cities: ICityState[]
 }
 
-const initialState: citiesState = {
+const initialState: ICitiesState = {
     cities: []
 }
 
-export const cityReducer = (state: citiesState = initialState, action: CityAction) => {
+export const cityReducer = (state: ICitiesState = initialState, action: CityAction) => {
     switch ( action.type ) {
         case 'loadCities':
             return {

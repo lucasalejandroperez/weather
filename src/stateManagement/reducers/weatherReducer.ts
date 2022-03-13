@@ -1,4 +1,4 @@
-import { WeatherAction, weatherState } from "../action-types/weatherTypes";
+import { WeatherAction, IWeatherState } from "../action-types/weatherTypes";
 
 const initialState = {
     currentWeather: {
@@ -16,7 +16,7 @@ const initialState = {
     }]
 }
 
-export const weatherReducer = ( state: weatherState = initialState, action: WeatherAction ) => {
+export const weatherReducer = ( state: IWeatherState = initialState, action: WeatherAction ) => {
     switch ( action.type ) {
         case 'setCurrentWeather':
             return {

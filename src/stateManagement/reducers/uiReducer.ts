@@ -1,11 +1,10 @@
-import { UiAction, uiState } from "../action-types/uiTypes";
+import { UiAction, IUiState } from "../action-types/uiTypes";
 
 const initialState = {
     loading: false
 }
 
-
-export const uiReducer = (state: uiState = initialState, action: UiAction) => {
+export const uiReducer = (state: IUiState = initialState, action: UiAction) => {
     switch ( action.type ) {
         case 'startLoading':
             return {

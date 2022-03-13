@@ -9,13 +9,13 @@ export const WeatherFiveDays = () => {
 
   return (
     <div className="row mt-3 pb-2 rounded weatherFiveDays_box">
-        <div className="col-12">
+        <div className="col-12 mb-3">
           <h1>Extended 5 days</h1>
         </div>
         {
           weatherFiveDays &&
           weatherFiveDays.map( (weather, index) => (
-            <div className="col-12 col-sm-4 col-md-2 col-lg-2" key={ index }>
+            <div className={`col-12 col-sm-4 col-md-2 col-lg-2 d-flex justify-content-center ${ index > 0 && 'weatherOneDay_border-left' }`} key={ index }>
               <WeatherOneDay 
                 temp={ weather.temp } 
                 humidity={ weather.humidity } 

@@ -1,4 +1,4 @@
-export interface uiState {
+export interface IUiState {
     loading: boolean
 }
 

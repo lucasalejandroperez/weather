@@ -1,10 +1,10 @@
 import moment from "moment";
-import { currentWeatherForecast } from "../../stateManagement/action-types/weatherTypes";
+import { ICurrentWeatherForecast } from "../../stateManagement/action-types/weatherTypes";
 import { getDateUTC } from "../../utils/getDateUTC";
 
 import './WeatherOneDay.css';
 
-export const WeatherOneDay = ({ temp, humidity, wind_speed, description, date }:currentWeatherForecast) => {
+export const WeatherOneDay = ({ temp, humidity, wind_speed, description, date }:ICurrentWeatherForecast) => {
 
   return (
     <>

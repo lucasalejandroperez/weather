@@ -1,11 +1,11 @@
-export interface currentWeather {
+export interface ICurrentWeather {
     temp: number;
     humidity: number;
     wind_speed: number;
     description: string;
 }
 
-export interface currentWeatherForecast {
+export interface ICurrentWeatherForecast {
     temp: number;
     humidity: number;
     wind_speed: number;
@@ -13,12 +13,12 @@ export interface currentWeatherForecast {
     date: number
 }
 
-export interface weatherState {
-    currentWeather: currentWeather,
-    weatherFiveDays: currentWeatherForecast[]
+export interface IWeatherState {
+    currentWeather: ICurrentWeather,
+    weatherFiveDays: ICurrentWeatherForecast[]
 }
 
-export interface currentWeatherRaw { 
+export interface ICurrentWeatherRaw { 
     temp: {
         day: number
     },
@@ -31,5 +31,5 @@ export interface currentWeatherRaw {
 }
 
 export type WeatherAction = 
-| { type: 'setCurrentWeather', payload: currentWeather }
-| { type: 'setWeatherFiveDays', payload: currentWeatherForecast[] };
+| { type: 'setCurrentWeather', payload: ICurrentWeather }
+| { type: 'setWeatherFiveDays', payload: ICurrentWeatherForecast[] };
